@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website By Lokanath</title>
+    </head>
+    <link rel="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+       
+        header{
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%,0% 100%);
+}
+nav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+.logo{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+#blue{
+    color: #74b9ff;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 10px;
+}
+.menu a:first-child{
+    border-bottom:2px solid #74b9ff;
+}
+.icon img{
+    width: 100px;
+}
+.container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.left{
+    flex-basis: 50%;
+}
+.right{
+flex-basis: 50%;
+max-width: 400px;
+}
+.right h1{
+    color: #74b9ff;
+    font: 50px;
+}
+.right p{
+    font-size:25px;
+    margin: 0px;
+}
+.btn{
+    background: transparent;
+    padding: 10px 20px;
+    color: #74b9ff;
+    border: 1px solid #74b9ff;
+    border-radius: 8px;
+}
+#about{
+    padding: 100px 0px;
+}
+.about-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-left-col{
+    flex-basis: 50%;
+}
+.about-right-col{
+    flex-basis: 50%;
+    text-align: center;
+}
+.about-right-col img{
+    width: 80%;
+}
+.about-left-col{
+    max-width: 400px;
+    margin: auto;
+}
+.about-left-col h1{
+    font-size: 50px;
+}
+.about-left-col p{
+    font-size: 20px;
+    text-align: justify;
+    margin: 15px 0px;
+}
+.c-btn{
+    padding: 10px;
+    margin: 10px 0px;
+    color: white;
+    border: none;
+    background: #74b9ff;
+}
+ #signup{
+     padding-top: 50px;
+     padding-bottom: 20px;
+     background: rgb(0, 0, 0, 0.03);
+     clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%,0% 100%);
+ }
+ .signup-row{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .signup-left-col{
+     flex-basis: 50px;
+     text-align: center;
+ }
+ .signup-right-col{
+     flex-basis: 50%;
+ }
+ .signup-right-col h1{
+     font-size: 90px;
+ }
+ .signup-right-col h2{
+     font-size: 45px;
+     letter-spacing: 60px;
+     color: rgba(0, 0, 0, 0.3);
+     margin: 10px 0px;
+ }
+ #services{
+     padding: 50px 0px;
+ }
+ .services-info{
+     text-align: center;
+ }
+ .services-info h1{
+     font-size: 50px;
+ }
+ .services-info p{
+     font-size: 25px;
+     font-weight: bold;
+ }
+ .services-row{
+     display: grid;
+     grid-template-columns: repeat(3,200px);
+     grid-auto-rows: minmax(150px,auto);
+     grid-gap: 3em;
+     justify-content: center;
+     padding-top: 20px;
+ }
+ .services-box{
+     box-shadow: 2px 3px 5px grey;
+     padding: 10px;
+     text-align: center;
+ }
+ .services-box i{
+     background: #0984e3;
+     color: white;
+     font-size: 30px;
+     padding: 10px;
+     margin-top: -20px;
+ }
+ #members{
+     padding: 100px;
+     background: url(image/dumble1.jpg);
+     background-size: 35% 35%;
+     background-repeat: no-repeat;
+     background-position: top right;
+
+ }
+ .member-card{
+     text-align: center;
+     padding-top: 50px;
+     width: 328px;
+     margin:auto;
+ }
+ .member-card p{
+     margin: 20px 0px;
+ }
+ .member-card h2{
+     margin: 20px 0px;
+ }
+#work{
+padding-top: 50px;
+padding-bottom: 200px;
+background: rgba(0, 0, 0, 0.03);
+clip-path: polygon(0% 0%,100% 0%,100% 100%,80% 80%,0% 100%);
+}
+.work-box{
+    box-shadow: 2px 3px 5px grey;
+}
+.work-box img{
+    width: 100%;
+    height: 100%;
+}
+#footer{
+    background: black;
+    color: white;
+    padding: -20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container1 {
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 83%;
+        border-radius: 28px;
+        padding: 50px 50px;
+
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai 2', cursive;
+        font-size: 25px;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 8px;
+    }
+
+    .container1 h1 {
+        text-align: center;
+    }
+
+    .container1 button {
+        display: block;
+        margin: auto;
+        width: 41%;
+        background: transparent;
+    padding: 5px 218px;
+    color: #74b9ff;
+    border: 1px solid #74b9ff;
+    border-radius: 8px;
+    font-size: 25px;
+    }
+    </style>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span id="blue">POWER</span>ZONE
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Client</a>
+                <a href="#">Our Work</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="icon">
+                <img src="image/icon3.jpg">
+
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left">
+                <img src="image/banner2.webp">
+            </div>
+            <div class="right">
+                <p>I am a</p>
+                <h1> Gym Trainer</h1>
+                <p>Join The Best Gym Of Odisha Now. "Sore today, stronger tomorrow"</p>
+            <button class="btn">Join Us</button>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="about-row">
+            <div class="about-left-col">
+                <h1> About <span id="blue">Us</span></h1>
+                <p>
+                    This is a place where people go to train and exercise, but also to unwind, socialize, and recharge. Therefore, a good gym is a facility that promotes physical activity, provides a safe, functional, and comfortable workout environment, and creates a pleasant and enjoyable atmosphere for recreation and socialization.
+                </p>
+                
+                <button class="c-btn">Read more</button>
+            </div>
+            <div class="about-right-col">
+                <img src="image/white5.jpg">
+
+            </div>
+        </div>
+    </section>
+    <section id="signup">
+        <div class="signup-row">
+            <div class="signup-left-col">
+                <img src="image/white3.jpg">
+            </div>
+            <div class="signup-right-col">
+                <h1> BEING <span id="blue">BODY</span></h1>
+                <h2>BUILDER</h2>
+                <button class="c-btn">Signup</button>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="services">
+        <div class="services-info">
+            <h1>Our <span id="blue">Services</span></h1>
+            <p>What we Provide</p>
+        </div>
+        <div class="services-row">
+        <div class="services-box">
+           <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <h2>Cardio</h2>
+            <p> I am Lokanath</p>
+        </div>
+        <div class="services-box">
+           <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <h2>A Track</h2>
+            
+        </div>
+        <div class="services-box">
+           <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <h2>Swimming Pool</h2>
+          
+        </div>
+        <div class="services-box">
+           <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <h2>Basketball court</h2>
+          
+        </div>
+        <div class="services-box">
+           <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <h2>workout classrooms</h2>
+            
+        </div>
+        <div class="services-box">
+            <i class="fa fa-suitcase" aria-hidden="true"></i>
+            <h2>Free Weight Area</h2>
+           
+        </div>
+        </div>
+    </section>
+    <section id="members">
+        <div class="services-info">
+            <h1>Our <span id="blue">Members</span></h1>
+            <p>What Our Gym Member Says</p>
+
+        </div>
+        <div class="member-card">
+        <img src="image/trainer6.jpg">
+        <p>
+            “If you want something you've never had, you must be willing to do something you've never done.” “The body achieves what the mind believes.” “Once you are exercising regularly, the hardest thing is to stop it.” “If you don't make time for exercise, you'll probably have to make time for illness.”
+        </p>
+        <h2>Rashmika, Gym Client</h2>
+        <img src="image/icon.jpg">
+
+    </div>
+    </section>
+    <section id="work">
+        <div class="services-info">
+            <h1>Our <span id="blue">Works</span></h1>
+            <p>What we Provide</p>
+        </div>
+        <div class="services-row">
+            <div class="work-box">
+                <img src="image/f-img-1.jpg">
+            </div>
+            <div class="work-box">
+                <img src="image/f-img-3.jpg">
+            </div>
+            <div class="work-box">
+                <img src="image/blog-1.jpg">
+            </div>
+            <div class="work-box">
+                <img src="image/blog-2.jpg">
+            </div>
+            <div class="work-box">
+                <img src="image/blog-4.jpg">
+            </div>
+            <div class="work-box">
+                <img src="image/blog-5.jpg">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="services-info">
+            <h1>Get in<span id="blue">Touch</span></h1>
+            <p>We are Available</p>
+        </div>
+    </section>
+    <div class="container1">
+        <h1>Get flat 50% off on joining today</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Contact Details">
+            </div>
+            <button class="btn1">Submit</button>
+        </form>
+    </div>
+    <section id="footer">
+        <h1>POWER<span id="blue">ZONE</span></h1>
+        <p>&copy; 2022 Power Zone, India</p>
+        <img src="image/icon3.jpg">
+         <p>E-mail: lokanathpanda128@gmail.com,</p>
+        <p>Mobile:8144496407,8144496408,</p>
+        <p>Adress: AT/PO: Keonjhar, Dist: Keonjhar, Pin: 758083</p>
+    </section>
+
+   
+</body>
+</html>
